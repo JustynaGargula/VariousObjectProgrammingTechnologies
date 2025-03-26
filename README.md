@@ -1,7 +1,7 @@
 # Zadania z Projektowania Obiektowego
 Spis treści:
-* [Zadanie 1](zadanie_1)
-* [Zadanie 2](zadanie_2)
+* [Zadanie 1](#zadanie-1)
+* [Zadanie 2](#zadanie-2)
 
 ## Zadanie 1
 Proszę napisać program w Pascalu, który zawiera dwie procedury, jedna
