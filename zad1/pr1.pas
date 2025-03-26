@@ -1,35 +1,49 @@
 PROGRAM basicProcedures;
 
-var random_numbers: Array[0..49] of Integer;
+var randomNumbers: Array[0..49] of Integer;
     i, j, number: integer;
 
-procedure randomNumbers();
+procedure generateRandomNumbers();
 begin
     Randomize;
-    for i:=0 to 49 do
+    for i:=0 to Length(randomNumbers) do
         begin
                 number := Random(101);
-                random_numbers[i] := number;
+                randomNumbers[i] := number;
         end;
 end;
 
 procedure sortArray();
-var sorted_numbers: Array[0..49] of Integer;
-nr1, nr2: integer;
+var nr1, nr2: integer;
 begin
-    for i:= 0 to 49 do
+    for i:= 0 to Length(randomNumbers) do
         begin
-        for j:=0 to 48 do
+        for j:=0 to Length(randomNumbers)-1 do
             begin
-                nr1 := random_numbers[j];
-                nr2 := random_numbers[j+1];
+                nr1 := randomNumbers[j];
+                nr2 := randomNumbers[j+1];
                 if nr1 > nr2 then
-                    random_numbers[j] := nr2;
-                    random_numbers[j+1] := nr1;
+                    begin
+                        randomNumbers[j] := nr2;
+                        randomNumbers[j+1] := nr1;
+                    end;
             end;
         end;
 end;
 
+procedure printRandomNumbers();
 begin
-    randomNumbers();
+    for i:=0 to Length(randomNumbers) do
+    begin
+        WriteLn(randomNumbers[i])
+    end;
+end;
+
+begin
+    WriteLn('Step one');
+    generateRandomNumbers();
+    printRandomNumbers();
+    WriteLn('Step two');
+    sortArray();
+    printRandomNumbers();
 end.
