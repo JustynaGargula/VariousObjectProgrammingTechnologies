@@ -36,15 +36,50 @@ procedure printRandomNumbers();
 begin
     for i:=0 to Length(randomNumbers)-1 do
     begin
-        WriteLn(randomNumbers[i])
+        WriteLn(randomNumbers[i]);
     end;
 end;
 
+procedure testGenerateRandomNumbers(start, last, howManyNumbers: integer);
+var number: integer;
 begin
-    WriteLn('Step one');
-    generateRandomNumbers(0, 100, 10);
-    printRandomNumbers();
-    WriteLn('Step two');
+    generateRandomNumbers(start, last, howManyNumbers);
+    if Length(randomNumbers) <> howManyNumbers then
+    begin
+        WriteLn('Failed to generate random numbers correctly. Quantity of numbers is wrong.');
+        Exit;
+    end;
+
+    for i:=0 to howManyNumbers-1 do
+    begin
+    number:=randomNumbers[i];
+        if (number > last) or (number < start) then
+        begin
+            WriteLn('Failed to generate random numbers correctly. Numbers are out of given range.');
+            Exit;
+        end;
+    end;
+    WriteLn('Succeded to generate random numbers correctly.')
+end;
+
+procedure testSortArray()
+begin
     sortArray();
-    printRandomNumbers();
+    for i:=0 to Length(randomNumbers)-2 do
+    begin
+        if (randomNumbers[i] > randomNumbers[i+1]) then
+        begin
+            WriteLn('Failed to sort numbers correctly.');
+            Exit;
+        end;
+    end;
+    WriteLn('Succeded to sort numbers correctly.');
+end;
+
+begin
+    testGenerateRandomNumbers(0, 100, 50);
+    testSortArray();
+    testGenerateRandomNumbers(50, 80, 15);
+    testSortArray();
+    WriteLn('Finished');
 end.
