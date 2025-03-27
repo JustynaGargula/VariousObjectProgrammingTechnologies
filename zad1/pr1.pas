@@ -62,7 +62,7 @@ begin
     WriteLn('Succeded to generate random numbers correctly.')
 end;
 
-procedure testSortArray()
+procedure testSortArray();
 begin
     sortArray();
     for i:=0 to Length(randomNumbers)-2 do
