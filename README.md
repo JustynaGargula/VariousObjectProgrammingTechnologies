@@ -28,6 +28,8 @@ CRUD
 * 4.5 Należy stworzyć widoki do wszystkich kontrolerów
 * 5.0 Stworzenie panelu administracyjnego z mockowanym logowaniem
 
+Aplikację uruchamiam poleceniem `# symfony server:start --port=80 --allow-all-ip`
+
 ## Zadanie 3 Spring Boot (Kotlin)
 
 Proszę stworzyć prosty serwis do autoryzacji, który zasymuluje
