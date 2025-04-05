@@ -9,12 +9,13 @@ Proszę napisać program w Pascalu, który zawiera dwie procedury, jedna
 generuje listę 50 losowych liczb od 0 do 100. Druga procedura sortuje
 liczbę za pomocą sortowania bąbelkowego.
 
-* 3.0 Procedura do generowania 50 losowych liczb od 0 do 100
-* 3.5 Procedura do sortowania liczb
-* 4.0 Dodanie parametrów do procedury losującej określającymi zakres
-losowania: od, do, ile
-* 4.5 5 testów jednostkowych testujące procedury
-* 5.0 Skrypt w bashu do uruchamiania aplikacji w Pascalu via docker
+* 3.0 Procedura do generowania 50 losowych liczb od 0 do 100 [commit](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/13734f7d6f64d09fc589db14fcd37f5427982ce1)
+* 3.5 Procedura do sortowania liczb [commit](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/a5293c17b488e01f661ce7728168853de67d4e2b)
+* 4.0 Dodanie parametrów do procedury losującej określającymi zakres losowania: od, do, ile [commit](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/031bd0968a6dbf7fc5dfdea82452de323da1468b)
+* 4.5 5 testów jednostkowych testujące procedury [commit](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/d9ad2b651b525d3335068d70c2b8b05a90ac4809)
+* 5.0 Skrypt w bashu do uruchamiania aplikacji w Pascalu via docker [commit](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/0915e94d2904387e157c896c82c7e1f2a6703f50)
+
+Kod: folder **zad1**
 
 ## Zadanie 2 Symfony PHP
 
@@ -27,6 +28,8 @@ CRUD [commit](https://github.com/JustynaGargula/VariousObjectProgrammingTechnolo
 * 4.0 Należy stworzyć dwa dodatkowe kontrolery wraz z modelami [commit](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/6bb95a2f83c223e1fb3778124f83a4fce7d4b196)
 * 4.5 Należy stworzyć widoki do wszystkich kontrolerów [commit + wcześniej, przy tworzeniu kontrollerów wygenerowana większość](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/edbe5bba8b5bb3bb3a6480ae776c2e0c82125c54)
 * 5.0 Stworzenie panelu administracyjnego z mockowanym logowaniem
+
+Kod: folder **zad2**
 
 Aplikację uruchamiam poleceniem `# symfony server:start --port=80 --allow-all-ip`
 
@@ -48,3 +51,5 @@ formie eager
 * 4.5 Należy wstrzyknąć singleton do głównej klasy via @Autowired
 * 5.0 Obok wersji Eager do wyboru powinna być wersja Singletona w wersji
 lazy
+
+Kod: folder **zad3**
