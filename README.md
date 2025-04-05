@@ -1,10 +1,10 @@
 # Zadania z Projektowania Obiektowego
 Spis treści:
-* [Zadanie 1](#zadanie-1)
-* [Zadanie 2](#zadanie-2)
-* [Zadanie 3](#zadanie-3-spring-boot-(kotlin))
+* [Zadanie 1](#zadanie-1-pascal)
+* [Zadanie 2](#zadanie-2-symfony-php)
+* [Zadanie 3](#zadanie-3-spring-boot-kotlin)
 
-## Zadanie 1 Pascala
+## Zadanie 1 Pascal
 Proszę napisać program w Pascalu, który zawiera dwie procedury, jedna
 generuje listę 50 losowych liczb od 0 do 100. Druga procedura sortuje
 liczbę za pomocą sortowania bąbelkowego.
@@ -16,21 +16,21 @@ losowania: od, do, ile
 * 4.5 5 testów jednostkowych testujące procedury
 * 5.0 Skrypt w bashu do uruchamiania aplikacji w Pascalu via docker
 
-## Zadanie 2 Symfony (PHP)
+## Zadanie 2 Symfony PHP
 
 Należy stworzyć aplikację webową na bazie frameworka Symfony na
 obrazie kprzystalski/projobj-php:latest. Baza danych dowolna, sugeruję
 SQLite.
 * 3.0 Należy stworzyć jeden model z kontrolerem z produktami, zgodnie z
-CRUD
-* 3.5 Należy stworzyć skrypty do testów endpointów via curl
-* 4.0 Należy stworzyć dwa dodatkowe kontrolery wraz z modelami
-* 4.5 Należy stworzyć widoki do wszystkich kontrolerów
+CRUD [commit](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/193633f9565f3f840d5565a8574f155a91934a8e)
+* 3.5 Należy stworzyć skrypty do testów endpointów via curl [commit](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/a321211985dd2d10b09e365a10c4c2502ff54c3b)
+* 4.0 Należy stworzyć dwa dodatkowe kontrolery wraz z modelami [commit](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/6bb95a2f83c223e1fb3778124f83a4fce7d4b196)
+* 4.5 Należy stworzyć widoki do wszystkich kontrolerów [commit + wcześniej, przy tworzeniu kontrollerów wygenerowana większość](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/edbe5bba8b5bb3bb3a6480ae776c2e0c82125c54)
 * 5.0 Stworzenie panelu administracyjnego z mockowanym logowaniem
 
 Aplikację uruchamiam poleceniem `# symfony server:start --port=80 --allow-all-ip`
 
-## Zadanie 3 Spring Boot (Kotlin)
+## Zadanie 3 Spring Boot Kotlin
 
 Proszę stworzyć prosty serwis do autoryzacji, który zasymuluje
 autoryzację użytkownika za pomocą przesłanej nazwy użytkownika oraz
