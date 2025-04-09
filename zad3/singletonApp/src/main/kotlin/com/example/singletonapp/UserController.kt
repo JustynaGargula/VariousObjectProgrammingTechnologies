@@ -2,21 +2,17 @@ package com.example.singletonapp
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*
+import org.springframework.context.annotation.Lazy
 
 
 @RestController
 @RequestMapping("/auth")
-class UserController {
-    private var authService = AuthService()
+class UserController @Autowired constructor( private var authService: AuthService, @Lazy private val lazyAuthService: LazyAuthService) {
     private var users = listOf<User>(
         User("user1", "pass1"),
         User("user2", "pass2"),
         User("user3", "pass3")
     )
-    @Autowired
-    constructor(authService: AuthService) {
-        this.authService = authService
-    }
 
     @GetMapping("/users")
     fun getUsers(): List<User>{
@@ -39,6 +35,15 @@ class UserController {
         }
         else{
             return "Log in failed"
+        }
+    }
+    @PostMapping("/lazy-login")
+    fun lazyLogin(@RequestParam userName: String, @RequestParam password: String): String{
+        if(checkIfUserRegistered(userName) && lazyAuthService.authenticate(userName, password)) {
+            return "Successfully lazy logged in"
+        }
+        else{
+            return "Lazy log in failed"
         }
     }
 
