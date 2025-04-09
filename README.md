@@ -15,7 +15,7 @@ liczbę za pomocą sortowania bąbelkowego.
 * 4.5 5 testów jednostkowych testujące procedury [commit](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/d9ad2b651b525d3335068d70c2b8b05a90ac4809)
 * 5.0 Skrypt w bashu do uruchamiania aplikacji w Pascalu via docker [commit](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/0915e94d2904387e157c896c82c7e1f2a6703f50)
 
-Kod: folder **zad1**
+Kod w folderze: **zad1**
 
 ## Zadanie 2 Symfony PHP
 
@@ -29,7 +29,7 @@ CRUD [commit](https://github.com/JustynaGargula/VariousObjectProgrammingTechnolo
 * 4.5 Należy stworzyć widoki do wszystkich kontrolerów [commit + wcześniej, przy tworzeniu kontrollerów wygenerowana większość](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/edbe5bba8b5bb3bb3a6480ae776c2e0c82125c54)
 * 5.0 Stworzenie panelu administracyjnego z mockowanym logowaniem
 
-Kod: folder **zad2**
+Kod w folderze: **zad2**
 
 Aplikację uruchamiam poleceniem `# symfony server:start --port=80 --allow-all-ip`
 
@@ -43,13 +43,11 @@ i powinna zostać napisana w języku Kotlin. Oparta powinna zostać na
 frameworku Spring Boot, podobnie jak na zajęciach. Serwis do
 autoryzacji powinien być singletonem.
 
-* 3.0 Należy stworzyć jeden kontroler wraz z danymi wyświetlanymi z
-listy na endpoint’cie w formacie JSON - Kotlin + Spring Boot
-* 3.5 Należy stworzyć klasę do autoryzacji (mock) jako Singleton w
-formie eager
-* 4.0 Należy obsłużyć dane autoryzacji przekazywane przez użytkownika
-* 4.5 Należy wstrzyknąć singleton do głównej klasy via @Autowired
-* 5.0 Obok wersji Eager do wyboru powinna być wersja Singletona w wersji
-lazy
+* 3.0 Należy stworzyć jeden kontroler wraz z danymi wyświetlanymi z listy na endpoint’cie w formacie JSON - Kotlin + Spring Boot [commit](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/f1842c2849606b6b3eed77b5bfaacbd4487be92c)
+* 3.5 Należy stworzyć klasę do autoryzacji (mock) jako Singleton w formie eager [commit](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/b8e4215ae0149cdfb0a79c3ce3c82369bc588988)
+* 4.0 Należy obsłużyć dane autoryzacji przekazywane przez użytkownika [commit](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/acc937be2c1b2b1c6fd3ea35bfd9408de6a69c90)
+* 4.5 Należy wstrzyknąć singleton do głównej klasy via @Autowired [commit](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/acc937be2c1b2b1c6fd3ea35bfd9408de6a69c90)
+* 5.0 Obok wersji Eager do wyboru powinna być wersja Singletona w wersji lazy [commit](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/97dcad637576b2ab59dcd862f7cf8c67f8303b46)
 
-Kod: folder **zad3**
+Kod w folderze: **zad3/singletonApp**
+
