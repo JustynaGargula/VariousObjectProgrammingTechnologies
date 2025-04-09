@@ -1,27 +1,40 @@
 package com.example.singletonapp
 
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RequestParam
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.web.bind.annotation.*
 
 
 @RestController
-@RequestMapping
+@RequestMapping("/auth")
 class UserController {
+    private var authService = AuthService()
+    private var users = listOf<User>(
+        User("user1", "pass1"),
+        User("user2", "pass2"),
+        User("user3", "pass3")
+    )
+    @Autowired
+    constructor(authService: AuthService) {
+        this.authService = authService
+    }
 
     @GetMapping("/users")
     fun getUsers(): List<User>{
-        return listOf<User>(
-            User("user1", "pass1"),
-            User("user2", "pass2"),
-            User("user3", "pass3")
-        )
+        return users
     }
 
-    @GetMapping("/login")
+    fun checkIfUserRegistered(name: String): Boolean {
+        for(user in users){
+            if(user.userName == name){
+                return true
+            }
+        }
+        return false
+    }
+
+    @PostMapping("/login")
     fun login(@RequestParam userName: String, @RequestParam password: String): String{
-        if(AuthService.authenticate(userName, password)) {
+        if(checkIfUserRegistered(userName) && authService.authenticate(userName, password)) {
             return "Successfully logged in"
         }
         else{
