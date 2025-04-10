@@ -3,6 +3,7 @@ Spis treści:
 * [Zadanie 1](#zadanie-1-pascal)
 * [Zadanie 2](#zadanie-2-symfony-php)
 * [Zadanie 3](#zadanie-3-spring-boot-kotlin)
+* [Zadanie 4](#zadanie-4-echo-go)
 
 ## Zadanie 1 Pascal
 Proszę napisać program w Pascalu, który zawiera dwie procedury, jedna
@@ -51,7 +52,7 @@ autoryzacji powinien być singletonem.
 
 Kod w folderze: **zad3/singletonApp**
 
-## Zadanie 4 Echo (Go)
+## Zadanie 4 Echo Go
 Należy stworzyć aplikację w Go na frameworku echo. Aplikacja ma mieć
 jeden endpoint, minimum jedną funkcję proxy, która pobiera dane np. o
 pogodzie, giełdzie, etc. (do wyboru) z zewnętrznego API. Zapytania do
