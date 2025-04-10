@@ -14,12 +14,12 @@ type Weather struct {
 	Temperature string
 }
 
-var weatherData = []Weather {
-	{City: "Cracow", Date: "10.04.2025", Temperature: "5"},
-	{City: "Cracow", Date: "11.04.2025", Temperature: "10"},
-}
+var weatherData []Weather
 
 func GetWeatherForecast(c echo.Context) error {
-	
+	weatherData, error := fetchWeatherData()
+	if weatherData == nil{
+		return c.JSON(http.StatusNotFound, error)
+	}
 	return c.JSON(http.StatusOK, weatherData)
 }
