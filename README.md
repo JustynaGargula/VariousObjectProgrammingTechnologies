@@ -4,6 +4,8 @@ Spis treści:
 * [Zadanie 2](#zadanie-2-symfony-php)
 * [Zadanie 3](#zadanie-3-spring-boot-kotlin)
 * [Zadanie 4](#zadanie-4-echo-go)
+* [Zadanie 5](#zadanie-5-react)
+* [Zadanie 6](#zadanie-6-sonar-js)
 
 ## Zadanie 1 Pascal
 Proszę napisać program w Pascalu, który zawiera dwie procedury, jedna
@@ -70,3 +72,41 @@ zewnętrznego podczas zapytania do naszego kontrolera
 (Pogoda), lub akcje (Giełda) zwracając JSONa
 
 Kod w folderze: **zad4**
+
+## Zadanie 5 React
+Wzorce behawioralne
+
+Należy stworzyć aplikację kliencką wykorzystując bibliotekę React.js.
+Dane pomiędzy wszystkimi komponentami powinny być przesyłane za pomocą
+React hooks.
+
+* 3.0 W ramach projektu należy stworzyć dwa komponenty: Produkty oraz
+Płatności; Płatności powinny wysyłać do aplikacji serwerowej dane, a w
+Produktach powinniśmy pobierać dane o produktach z aplikacji
+serwerowej;
+* 3.5 Należy dodać Koszyk wraz z widokiem; należy wykorzystać routing
+* 4.0 Dane pomiędzy wszystkimi komponentami powinny być przesyłane za
+pomocą React hooks
+* 4.5 Należy dodać skrypt uruchamiający aplikację serwerową oraz
+kliencką na dockerze via docker-compose
+* 5.0 Należy wykorzystać axios’a oraz dodać nagłówki pod CORS
+
+## Zadanie 6 Sonar JS
+Clean Code ("Zapaszki")
+
+W ramach zadania 6 należy zredukować błędy typu: Bugs, Security
+Hotspots, Vulnerabilities oraz Code Smells. Błędy powinny być efektem
+statycznej analizy kodu za pomocą rozwiązania Sonar Cloud
+(https://sonarcloud.io/). Dodatkowo należy w Readme.md na każdym
+repozytorium dodać badge SonarCloud do powyższych czterech typów
+błędów (https://sonarcloud.io/project/information?id=). Należy
+sprawdzić kod projektu 5 z kodem w React’cie.
+
+* 3.0 Należy dodać eslint w hookach gita
+* 3.5 Należy wyeliminować wszystkie bugi w kodzie w Sonarze (kod
+aplikacji klienckiej)
+* 4.0 Należy wyeliminować wszystkie zapaszki w kodzie w Sonarze (kod
+aplikacji klienckiej)
+* 4.5 Należy wyeliminować wszystkie podatności oraz błędy bezpieczeństwa
+w kodzie w Sonarze (kod aplikacji klienckiej)
+* 5.0 Zredukować duplikaty kodu do 0%
