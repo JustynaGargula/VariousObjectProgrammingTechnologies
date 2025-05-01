@@ -14,5 +14,6 @@ func GetWeatherForecast(c echo.Context) error {
 	if weatherData == nil{
 		return c.JSON(http.StatusNotFound, error)
 	}
+	saveWeatherData(c, weatherData)
 	return c.JSON(http.StatusOK, weatherData)
 }

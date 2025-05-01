@@ -14,6 +14,8 @@ func main() {
 		return c.String(http.StatusOK, "Hello, World!")
 	})
 
+	controllers.CreateDatabase()
+
 	// Weather
 	e.GET("/weather", controllers.GetWeatherForecast)
 
