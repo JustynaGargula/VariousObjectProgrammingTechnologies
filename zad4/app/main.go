@@ -21,3 +21,7 @@ func main() {
 
 	e.Logger.Fatal(e.Start(":1323"))
 }
+
+// GPS coordinates of London, United Kingdom. Latitude: 51.5085 Longitude: -0.1257.
+// How to use it:
+// http://localhost:1323/weather?city=London&lat=51.5085&long=-0.1257

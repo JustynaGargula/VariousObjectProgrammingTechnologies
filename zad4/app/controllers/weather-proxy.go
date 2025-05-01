@@ -16,8 +16,8 @@ type WeatherDailyAll struct {
     Daily DailyDetails `json:"daily"`
 }
 
-func fetchWeatherData() ([]models.Weather, error) {
-	url:= "https://api.open-meteo.com/v1/forecast?latitude=50.06143&longitude=19.93658&daily=temperature_2m_mean&timezone=auto"
+func fetchWeatherData(city string, lat string, long string) ([]models.Weather, error) {
+	url:= "https://api.open-meteo.com/v1/forecast?latitude="+lat+"&longitude="+long+"&daily=temperature_2m_mean&timezone=auto"
 	resp, err := http.Get(url)
 	defer resp.Body.Close()
 	if err != nil {
@@ -25,7 +25,7 @@ func fetchWeatherData() ([]models.Weather, error) {
 	}
 
 	if resp.StatusCode != http.StatusOK {
-		return nil, fmt.Errorf("API return status: "+resp.Status)
+		return nil, fmt.Errorf("%s", "API return status: "+resp.Status)
 	} else{
 		var neededApiData WeatherDailyAll
 		err := json.NewDecoder(resp.Body).Decode(&neededApiData)
@@ -37,7 +37,7 @@ func fetchWeatherData() ([]models.Weather, error) {
 				temp := neededApiData.Daily.Temp[i]
 		
 				results = append(results, models.Weather{
-					City:        "Cracow",
+					City:        city,
 					Date:        date,
 					Temperature: fmt.Sprintf("%.1f°C", temp),
 				})
