@@ -62,16 +62,17 @@ endpointu można wysyłać w jako GET lub POST.
 
 * 3.0 Należy stworzyć aplikację we frameworki echo w j. Go, która będzie
 miała kontroler Pogody, która pozwala na pobieranie danych o pogodzie
-(lub akcjach giełdowych)
+(lub akcjach giełdowych) [commit](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/608573ed86e24af789b4c6ae816f9466182b570a)
 * 3.5 Należy stworzyć model Pogoda (lub Giełda) wykorzystując gorm, a
-dane załadować z listy przy uruchomieniu
+dane załadować z listy przy  [commit (2 commity później model przeniesiony do osobnego pliku)](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/11d28a6c3c54656d20a1aacdbd81e400ca403cd2)
 * 4.0 Należy stworzyć klasę proxy, która pobierze dane z serwisu
-zewnętrznego podczas zapytania do naszego kontrolera
-* 4.5 Należy zapisać pobrane dane z zewnątrz do bazy danych
+zewnętrznego podczas zapytania do naszego kontrolera [commit](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/2858ab32cafd895492947e513f6e79fa06b66c04)
+* 4.5 Należy zapisać pobrane dane z zewnątrz do bazy danych [commit (ten i następny dodany 1.05.2025)](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/ff09c8fa40f1e1a56b9f3c09e2cedd849890d03f)
 * 5.0 Należy rozszerzyć endpoint na więcej niż jedną lokalizację
-(Pogoda), lub akcje (Giełda) zwracając JSONa
+(Pogoda), lub akcje (Giełda) zwracając JSONa [commit](https://github.com/JustynaGargula/VariousObjectProgrammingTechnologies/commit/4c1e3e1e244e33e808fe504ae53db1f417330bd9)
 
-Kod w folderze: **zad4**
+Kod w folderze: **zad4/app**
+*Uwaga do punktu piątego: do pobrania pogody z innego miasta należy podać obie jego współrzędne geograficzne i nazwę miasta. Przykład: http://localhost:1323/weather?city=London&lat=51.5085&long=-0.1257*
 
 ## Zadanie 5 React
 Wzorce behawioralne
@@ -90,6 +91,9 @@ pomocą React hooks
 * 4.5 Należy dodać skrypt uruchamiający aplikację serwerową oraz
 kliencką na dockerze via docker-compose
 * 5.0 Należy wykorzystać axios’a oraz dodać nagłówki pod CORS
+
+Zadanie dostępne tu: [link](https://github.com/JustynaGargula/VariousTechnologies/tree/main/Zadanie5/react-app)
+Zadanie zostało zrobione na 4.5, historia commitów dostępna tu [link](https://github.com/JustynaGargula/VariousTechnologies/commits/main/Zadanie5/react-app)
 
 ## Zadanie 6 Sonar JS
 Clean Code ("Zapaszki")
