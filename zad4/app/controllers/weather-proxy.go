@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"app/models"
 	"encoding/json"
 	"fmt"
 	"net/http"
@@ -15,7 +16,7 @@ type WeatherDailyAll struct {
     Daily DailyDetails `json:"daily"`
 }
 
-func fetchWeatherData() ([]Weather, error) {
+func fetchWeatherData() ([]models.Weather, error) {
 	url:= "https://api.open-meteo.com/v1/forecast?latitude=50.06143&longitude=19.93658&daily=temperature_2m_mean&timezone=auto"
 	resp, err := http.Get(url)
 	defer resp.Body.Close()
@@ -29,13 +30,13 @@ func fetchWeatherData() ([]Weather, error) {
 		var neededApiData WeatherDailyAll
 		err := json.NewDecoder(resp.Body).Decode(&neededApiData)
 		if err == nil {
-			var results []Weather
+			var results []models.Weather
 
 			for i := range neededApiData.Daily.Date {
 				date := neededApiData.Daily.Date[i]
 				temp := neededApiData.Daily.Temp[i]
 		
-				results = append(results, Weather{
+				results = append(results, models.Weather{
 					City:        "Cracow",
 					Date:        date,
 					Temperature: fmt.Sprintf("%.1f°C", temp),
