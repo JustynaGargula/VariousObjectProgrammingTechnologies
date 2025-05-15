@@ -106,11 +106,13 @@ repozytorium dodać badge SonarCloud do powyższych czterech typów
 błędów (https://sonarcloud.io/project/information?id=). Należy
 sprawdzić kod projektu 5 z kodem w React’cie.
 
-* 3.0 Należy dodać eslint w hookach gita
+* 3.0 Należy dodać eslint w hookach gita [commit z eslintem](https://github.com/JustynaGargula/product-app-sonar-test-client/commit/00a439c4e78fdc98f77ed7683b39f6983be869ed) i [commmit z kopią precommita](https://github.com/JustynaGargula/product-app-sonar-test-client/commit/54391cbc910233a04fc6e83b399fd845d908bb43)
 * 3.5 Należy wyeliminować wszystkie bugi w kodzie w Sonarze (kod
-aplikacji klienckiej)
+aplikacji klienckiej) [commit](https://github.com/JustynaGargula/product-app-sonar-test-client/commit/4d3cd4ef3920abe59b946e871fffb89c6e8dbc3e) 
 * 4.0 Należy wyeliminować wszystkie zapaszki w kodzie w Sonarze (kod
 aplikacji klienckiej)
 * 4.5 Należy wyeliminować wszystkie podatności oraz błędy bezpieczeństwa
 w kodzie w Sonarze (kod aplikacji klienckiej)
 * 5.0 Zredukować duplikaty kodu do 0%
+
+Zadanie dostępne tu: [link](https://github.com/JustynaGargula/product-app-sonar-test-client)
