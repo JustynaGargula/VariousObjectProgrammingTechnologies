@@ -109,12 +109,12 @@ sprawdzić kod projektu 5 z kodem w React’cie.
 
 * 3.0 Należy dodać eslint w hookach gita [commit z eslintem](https://github.com/JustynaGargula/product-app-sonar-test-client/commit/00a439c4e78fdc98f77ed7683b39f6983be869ed) i [commmit z kopią precommita](https://github.com/JustynaGargula/product-app-sonar-test-client/commit/54391cbc910233a04fc6e83b399fd845d908bb43)
 * 3.5 Należy wyeliminować wszystkie bugi w kodzie w Sonarze (kod
-aplikacji klienckiej) [commit](https://github.com/JustynaGargula/product-app-sonar-test-client/commit/4d3cd4ef3920abe59b946e871fffb89c6e8dbc3e) 
+aplikacji klienckiej) [commit](https://github.com/JustynaGargula/product-app-sonar-test-client/commit/4d3cd4ef3920abe59b946e871fffb89c6e8dbc3e) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=product-app-ebiznes_react-test&metric=bugs&token=746597f340d4dc6878f88dea739b5a09ca5503d9)](https://sonarcloud.io/summary/new_code?id=product-app-ebiznes_react-test)
 * 4.0 Należy wyeliminować wszystkie zapaszki w kodzie w Sonarze (kod
-aplikacji klienckiej)
+aplikacji klienckiej) [było kilka commitów, np. ten](https://github.com/JustynaGargula/product-app-sonar-test-client/commit/ea760dbc9699e417e1e905ea387b76e04a401f3f) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=product-app-ebiznes_react-test&metric=code_smells&token=746597f340d4dc6878f88dea739b5a09ca5503d9)](https://sonarcloud.io/summary/new_code?id=product-app-ebiznes_react-test)
 * 4.5 Należy wyeliminować wszystkie podatności oraz błędy bezpieczeństwa
-w kodzie w Sonarze (kod aplikacji klienckiej)
-* 5.0 Zredukować duplikaty kodu do 0%
+w kodzie w Sonarze (kod aplikacji klienckiej)  [commit](https://github.com/JustynaGargula/product-app-sonar-test-client/commit/216c22ee8459a0acc5c6c0c6b3352b9a97bc5375) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=product-app-ebiznes_react-test&metric=security_rating&token=746597f340d4dc6878f88dea739b5a09ca5503d9)](https://sonarcloud.io/summary/new_code?id=product-app-ebiznes_react-test)
+* 5.0 Zredukować duplikaty kodu do 0% *Nie miałam duplikatów* [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=product-app-ebiznes_react-test&metric=duplicated_lines_density&token=746597f340d4dc6878f88dea739b5a09ca5503d9)](https://sonarcloud.io/summary/new_code?id=product-app-ebiznes_react-test)
 
 Zadanie dostępne tu: [link](https://github.com/JustynaGargula/product-app-sonar-test-client)
 
