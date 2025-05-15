@@ -1,11 +1,12 @@
 # Zadania z Projektowania Obiektowego
 Spis treści:
-* [Zadanie 1](#zadanie-1-pascal)
-* [Zadanie 2](#zadanie-2-symfony-php)
-* [Zadanie 3](#zadanie-3-spring-boot-kotlin)
-* [Zadanie 4](#zadanie-4-echo-go)
-* [Zadanie 5](#zadanie-5-react)
-* [Zadanie 6](#zadanie-6-sonar-js)
+* [Zadanie 1 Pascal](#zadanie-1-pascal)
+* [Zadanie 2 Symfony](#zadanie-2-symfony-php)
+* [Zadanie 3 Kotlin](#zadanie-3-spring-boot-kotlin)
+* [Zadanie 4 Go](#zadanie-4-echo-go)
+* [Zadanie 5 React](#zadanie-5-react)
+* [Zadanie 6 Sonar](#zadanie-6-sonar-js)
+* [Zadanie 7 Swift](#zadanie-7-vapor-swift)
 
 ## Zadanie 1 Pascal
 Proszę napisać program w Pascalu, który zawiera dwie procedury, jedna
@@ -116,3 +117,19 @@ w kodzie w Sonarze (kod aplikacji klienckiej)
 * 5.0 Zredukować duplikaty kodu do 0%
 
 Zadanie dostępne tu: [link](https://github.com/JustynaGargula/product-app-sonar-test-client)
+
+## Zadanie 7 Vapor Swift
+Antywzorce
+
+Proszę napisać prostą aplikację w Vaporze, wykorzystując Leaf jako
+silnik szablonów or Fluent jako ORM. Proszę stworzyć trzy modele oraz
+CRUD dla każdego z nich. Należy stworzyć model z minimum jedną
+relacją. CRUD powinien mieć odzwierciedlenie w szablonach.
+
+* 3.0 Należy stworzyć kontroler wraz z modele Produktów zgodny z CRUD w
+ORM Fluent
+* 3.5 Należy stworzyć szablony w Leaf
+* 4.0 Należy stworzyć drugi model oraz kontroler Kategorii wraz z
+relacją
+* 4.5 Należy wykorzystać Redis do przechowywania danych
+* 5.0 Wrzucić aplikację na heroku
