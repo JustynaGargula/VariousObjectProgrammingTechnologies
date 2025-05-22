@@ -7,6 +7,7 @@ Spis treści:
 * [Zadanie 5 React](#zadanie-5-react)
 * [Zadanie 6 Sonar](#zadanie-6-sonar-js)
 * [Zadanie 7 Swift](#zadanie-7-vapor-swift)
+* [Zadnie 8 Testy](#zadanie-8-testy)
 
 ## Zadanie 1 Pascal
 Proszę napisać program w Pascalu, który zawiera dwie procedury, jedna
@@ -133,3 +134,20 @@ ORM Fluent
 relacją
 * 4.5 Należy wykorzystać Redis do przechowywania danych
 * 5.0 Wrzucić aplikację na heroku
+
+## Zadanie 8 Testy
+
+Proszę pamiętać o stworzeniu darmowego konta via
+https://education.github.com/pack.
+
+* 3.0 Należy stworzyć 30 przypadków testowych w Pythonie w WebDriverze
+* 3.5 Należy rozszerzyć testy funkcjonalne, aby zawierały minimum 100
+asercji
+* 4.0 Należy stworzyć testy jednostkowe do wybranego wcześniejszego
+projektu z minimum 100 asercjami
+* 4.5 Należy dodać testy API, należy pokryć wszystkie endpointy z
+minimum jednym scenariuszem negatywnym per endpoint
+* 5.0 Należy uruchomić testy funkcjonalne na Browserstacku na urządzeniu
+mobilnym
+
+Kod z testami jest w repozytorium aplikacji stworzonej na inny przedmiot [link](https://github.com/JustynaGargula/bid-app) w folderze **/tests**.

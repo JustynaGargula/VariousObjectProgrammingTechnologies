@@ -1,0 +1,17 @@
+{
+    "name": "Vapor App",
+    "image": "kprzystalski/projobj-swift:latest",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            "extensions": [
+                "ms-vscode-remote.remote-containers",
+                "swiftlang.swift-vscode"
+            ]
+        }
+    },
+    "remoteUser": "root",
+    "workspaceFolder": "/workspace"
+}
