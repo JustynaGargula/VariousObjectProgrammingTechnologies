@@ -11,18 +11,30 @@ struct ProductController: RouteCollection {
             product.put(use: update)
             product.delete(use: delete)
         }
+
+        products.get("html", use: getAllProductsHtml)
     }
 
+    @Sendable
+    func getAllProductsHtml(req: Request) async throws -> View {
+        let products = try await Product.query(on: req.db).all()
+        return try await req.view.render("productsList", ["products": products])
+
+    }
+
+    @Sendable
     func getAll(req:Request) async throws -> [Product] {
         try await Product.query(on: req.db).all()
     }
 
+    @Sendable
     func create(req:Request) async throws -> Product {
         let product = try req.content.decode(Product.self)
         try await product.save(on: req.db)
         return product
     }
 
+    @Sendable
     func get(req:Request) async throws -> Product {
         guard let product = try await Product.find(req.parameters.get("productId"), on: req.db)
         else {
@@ -31,6 +43,7 @@ struct ProductController: RouteCollection {
         return product
     }
 
+    @Sendable
     func update(req:Request) async throws -> Product {
         let input = try req.content.decode(ProductUpdatedData.self)
         guard let product = try await Product.find(req.parameters.get("productId"), on: req.db)
@@ -52,6 +65,7 @@ struct ProductController: RouteCollection {
         return product
     }
 
+    @Sendable
     func delete(req:Request) async throws -> HTTPStatus {
         guard let product = try await Product.find(req.parameters.get("productId"), on: req.db)
         else {

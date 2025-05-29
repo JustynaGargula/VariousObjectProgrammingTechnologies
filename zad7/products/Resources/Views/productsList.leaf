@@ -1,0 +1,12 @@
+#extend("base") {
+    #export("title") { Lista produktów }
+
+    #export("body") {
+        <ul>
+            #for(product in products) {
+                <li>#(product.name)</li>
+            }
+            #endfor
+        </ul>
+    }
+}
