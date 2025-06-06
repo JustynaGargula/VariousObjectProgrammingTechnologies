@@ -149,7 +149,7 @@ relacją. CRUD powinien mieć odzwierciedlenie w szablonach.
 Proszę pamiętać o stworzeniu darmowego konta via
 https://education.github.com/pack.
 
-- 3.0 Należy stworzyć 30 przypadków testowych w Pythonie w WebDriverze
+- 3.0 Należy stworzyć 30 przypadków testowych w Pythonie w WebDriverze [commit](https://github.com/JustynaGargula/bid-app/commit/1bd2ce06365ea60083db2444c911f9ab7e039bf2)
 - 3.5 Należy rozszerzyć testy funkcjonalne, aby zawierały minimum 100
   asercji
 - 4.0 Należy stworzyć testy jednostkowe do wybranego wcześniejszego
